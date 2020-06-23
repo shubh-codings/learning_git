@@ -1,0 +1,46 @@
+# to_think
+
+
+solution of birtday problem
+
+
+def birthday(s,d,m):
+	
+	count = 0
+	for i in range(len(s)):
+		total = sum(s[i:m+i])
+		if total == d:
+			count+=1
+	return count
+
+
+
+s = [2,3,2,1,2]
+d = 3
+m = 2
+print(birthday(s,d,m))
+
+
+
+
+'''
+birthday chocolate problem :-
+
+       given day and month of birtday
+       chocolate has number printed on it which are given in array
+       need to find a piece of chocolate with day(d) of bday = sum of printed integer on the square piece with length == month of birth 
+
+'''
+
+'''
+
+divison sum pair problem :-
+
+		where given list of n integer and a positive integer k 
+		find the number a(i) +a(j) divisible by k 
+		i<j
+
+'''
+
+
+ #### split and strip and rstrip and sum()
