@@ -10,8 +10,10 @@ class Stack():
 	def is_empty(self):
 		return self.items==[]
 	def peek(self):
-		if not self.isEmpty:
+		if not self.is_empty:
 			return self.items[-1]
+	def size(self):
+		return len(self.items)
 """
 s = Stack()
 s.push("ram")
@@ -31,4 +33,9 @@ def rev_string(stack,input_string):
 
 stack = Stack()
 input_string = "shubham"
-print(rev_string(stack,input_string))
+stack.push("shubham")
+stack.push("shushant") 
+stack.push(2)
+print(stack.size())
+print(stack.is_empty())
+#print(rev_string(stack,input_string))
